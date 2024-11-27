@@ -1,190 +1,150 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Untitled</title>
-  
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist Showcase</title>
+    <title>Dwin - Official Website</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(45deg, #ff6b6b, #f8c471, #82e0aa, #5dade2);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
+            background: linear-gradient(to right, #ff7eb3, #ff758c, #ff5961);
             color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
         }
 
         header {
             text-align: center;
-            margin: 20px;
+            padding: 20px;
+            background: #ff4b5c;
         }
 
         header h1 {
-            font-size: 3rem;
-            text-shadow: 2px 2px #333;
+            margin: 0;
+            font-size: 2.5em;
         }
 
-        .albums, .singles, .tours {
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        .section {
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
-        }
-
-        .section-title {
             text-align: center;
-            font-size: 2rem;
-            margin-bottom: 15px;
         }
 
-        .album-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .album-container, .social-media {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
         }
 
         .album {
-            text-align: center;
+            background: #fff;
+            color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 200px;
         }
 
         .album img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s;
         }
 
-        .album img:hover {
-            transform: scale(1.05);
+        .album p {
+            margin: 10px;
         }
 
         .album a {
             display: block;
-            margin-top: 10px;
-            font-size: 1.2rem;
-            color: #ffeb3b;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background: #ff4b5c;
+            color: #fff;
             text-decoration: none;
+            border-radius: 4px;
         }
 
         .album a:hover {
-            text-decoration: underline;
+            background: #e43a4f;
         }
 
-        .socials {
-            text-align: center;
-            margin: 20px auto;
-        }
-
-        .socials a {
-            margin: 0 10px;
-            font-size: 2rem;
+        .social-media a {
+            font-size: 1.5em;
             color: #fff;
+            margin: 10px;
             text-decoration: none;
-            transition: color 0.3s;
         }
 
-        .socials a:hover {
-            color: #f1c40f;
+        .social-media a:hover {
+            color: #ffcc00;
         }
 
         footer {
-            margin: 20px;
             text-align: center;
-            font-size: 0.9rem;
+            padding: 20px;
+            background: #ff4b5c;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Artist Name</h1>
-        <p>Explore the discography, tours, and more!</p>
+        <h1>Dwin</h1>
+        <p>From Dodoma, Formerly of Dxquad</p>
     </header>
 
-    <section class="albums">
-        <h2 class="section-title">Albums</h2>
-        <div class="album-grid">
+    <section class="section">
+        <h2>Albums</h2>
+        <div class="album-container">
             <div class="album">
-                <img src="album1.jpg" alt="Album 1 Cover">
-                <a href="#">Stream Album 1</a>
+                <img src="https://i.ibb.co/Qmgn35f/Cover.jpg" alt="Album Cover 1">
+                <p><strong>Album Name 1</strong></p>
+                <a href="#" target="_blank">Listen Now</a>
             </div>
             <div class="album">
-                <img src="album2.jpg" alt="Album 2 Cover">
-                <a href="#">Stream Album 2</a>
+                <img src="https://i.ibb.co/tMTd1t0/dwin-1.jpg" alt="Album Cover 2">
+                <p><strong>Album Name 2</strong></p>
+                <a href="#" target="_blank">Listen Now</a>
             </div>
             <div class="album">
-                <img src="album3.jpg" alt="Album 3 Cover">
-                <a href="#">Stream Album 3</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="singles">
-        <h2 class="section-title">Singles</h2>
-        <div class="album-grid">
-            <div class="album">
-                <img src="single1.jpg" alt="Single 1 Cover">
-                <a href="#">Stream Single 1</a>
-            </div>
-            <div class="album">
-                <img src="single2.jpg" alt="Single 2 Cover">
-                <a href="#">Stream Single 2</a>
-            </div>
-            <div class="album">
-                <img src="single3.jpg" alt="Single 3 Cover">
-                <a href="#">Stream Single 3</a>
+                <img src="https://i.ibb.co/12GBHrV/dwin-artwk-copy.jpg" alt="Album Cover 3">
+                <p><strong>Album Name 3</strong></p>
+                <a href="#" target="_blank">Listen Now</a>
             </div>
         </div>
     </section>
 
-    <section class="tours">
-        <h2 class="section-title">Upcoming Tours</h2>
-        <ul>
-            <li>City 1 - Date</li>
-            <li>City 2 - Date</li>
-            <li>City 3 - Date</li>
-        </ul>
+    <section class="section">
+        <h2>Singles</h2>
+        <div class="album-container">
+            <div class="album">
+                <img src="https://i.ibb.co/SKNJThC/MUDA-WANGU-COVER.jpg" alt="Single Cover">
+                <p><strong>Muda Wangu</strong></p>
+                <a href="#" target="_blank">Listen Now</a>
+            </div>
+        </div>
     </section>
 
-    <div class="socials">
-        <a href="#">🔗 Instagram</a>
-        <a href="#">🔗 Twitter</a>
-        <a href="#">🔗 Facebook</a>
-    </div>
+    <section class="section">
+        <h2>Social Media</h2>
+        <div class="social-media">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Twitter</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Artist Name. All rights reserved.</p>
+        <p>&copy; 2024 Dwin Official. All Rights Reserved.</p>
     </footer>
-</body>
-</html>
-<!-- partial -->
-  
 </body>
 </html>
