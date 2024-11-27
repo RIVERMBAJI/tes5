@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(45deg, #ff6b6b, #f8c471, #82e0aa, #5dade2);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            margin: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px #333;
+        }
+
+        .albums, .singles, .tours {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .album {
+            text-align: center;
+        }
+
+        .album img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .album img:hover {
+            transform: scale(1.05);
+        }
+
+        .album a {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+
+        .album a:hover {
+            text-decoration: underline;
+        }
+
+        .socials {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .socials a {
+            margin: 0 10px;
+            font-size: 2rem;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .socials a:hover {
+            color: #f1c40f;
+        }
+
+        footer {
+            margin: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Artist Name</h1>
+        <p>Explore the discography, tours, and more!</p>
+    </header>
+
+    <section class="albums">
+        <h2 class="section-title">Albums</h2>
+        <div class="album-grid">
+            <div class="album">
+                <img src="album1.jpg" alt="Album 1 Cover">
+                <a href="#">Stream Album 1</a>
+            </div>
+            <div class="album">
+                <img src="album2.jpg" alt="Album 2 Cover">
+                <a href="#">Stream Album 2</a>
+            </div>
+            <div class="album">
+                <img src="album3.jpg" alt="Album 3 Cover">
+                <a href="#">Stream Album 3</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="singles">
+        <h2 class="section-title">Singles</h2>
+        <div class="album-grid">
+            <div class="album">
+                <img src="single1.jpg" alt="Single 1 Cover">
+                <a href="#">Stream Single 1</a>
+            </div>
+            <div class="album">
+                <img src="single2.jpg" alt="Single 2 Cover">
+                <a href="#">Stream Single 2</a>
+            </div>
+            <div class="album">
+                <img src="single3.jpg" alt="Single 3 Cover">
+                <a href="#">Stream Single 3</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tours">
+        <h2 class="section-title">Upcoming Tours</h2>
+        <ul>
+            <li>City 1 - Date</li>
+            <li>City 2 - Date</li>
+            <li>City 3 - Date</li>
+        </ul>
+    </section>
+
+    <div class="socials">
+        <a href="#">🔗 Instagram</a>
+        <a href="#">🔗 Twitter</a>
+        <a href="#">🔗 Facebook</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Artist Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
